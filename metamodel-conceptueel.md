@@ -2,7 +2,7 @@
 
 ### LGM-CIM-MIM - detail
 
-![](65E36413-AEA9-42f7-81D4-8478285401E2.svg)
+![](media/65E36413-AEA9-42f7-81D4-8478285401E2.svg)
 
 ## Objecttypes en relatieklassen
 
@@ -259,5 +259,3 @@ Een waardetype is een typering van gelijksoortige [waarden]
 |[Complex waardetype](#AF02163D-EA42-4739-A134-E9E43DA37E67) is specialisatie van [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0)||
 |[Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0) wordt ingevuld door datatype [Datatype](#09E003D3-8AD7-474d-8291-F8C4C9C8AE90) [0..1]||
 |[Waarde-element!](#3C6F95C0-D3C4-4429-82D5-F139299A38CF) heeft waardetype waardetype [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0) []||
-
-
