@@ -29,6 +29,7 @@ dfn{cursor:pointer}
   
   
   
+  
 
   
   
@@ -112,7 +113,7 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="TODO: vul in abstract.md een abstract in.">
+<meta name="description" content="Dit document beschrijft het metamodel voor een Conceptueel Informatiemodel (MIM niveau 2). Dit metamodel is zelf een logisch gegevensmodel: het beschrijft de logische structuur van de vastlegging van een conceptueel informatiemodel.">
 <style>
 
   .sidelabel {
@@ -126,14 +127,6 @@ ul.index code{color:inherit}
     white-space: nowrap;
     z-index: 1;
     background-color: #FF0000;
-  }
-</style>
-<script type="text/javascript">
-   /* Any custom mermaid.js scripts will go here. */
-  </script>
-<style>
-
-  /* Any custom mermaid.js scripts will go here. */
   }
 </style>
 <script id="initialUserConfig" type="application/json">{
@@ -1346,19 +1339,19 @@ ul.index code{color:inherit}
   "publishVersion": [],
   "editors": [
     {
-      "name": "voornaam achternaam",
+      "name": "Werkgroep MIM Metamodel",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
   "authors": [
     {
-      "name": "voornaam achternaam",
+      "name": "Paul Janssen",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
-  "github": "https://github.com/Geonovum/NL-ReSpec-template"
+  "github": "https://github.com/Geonovum/mim-conceptueel"
 }</script>
 <link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
@@ -1369,16 +1362,16 @@ ul.index code{color:inherit}
     <h2>
       Geonovum Standaard<br>
       Werkversie
-      <time class="dt-published" datetime="2026-02-09">03 juli 2026</time>
+      <time class="dt-published" datetime="2026-02-09">05 juli 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://geonovum.github.io/NL-ReSpec-template/">https://geonovum.github.io/NL-ReSpec-template/</a>
+              <a class="u-url status" href="https://geonovum.github.io/mim-conceptueel/">https://geonovum.github.io/mim-conceptueel/</a>
             </dd>
       <dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://docs.geostandaarden.nl/mim/mim-cim/">https://docs.geostandaarden.nl/mim/mim-cim/</a>
             </dd>
-      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/NL-ReSpec-template/">https://geonovum.github.io/NL-ReSpec-template/</a></dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/mim-conceptueel/">https://geonovum.github.io/mim-conceptueel/</a></dd>
       
       
       
@@ -1386,22 +1379,22 @@ ul.index code{color:inherit}
       
       <dt>Redacteur:</dt>
       <dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+    <span class="p-name fn">Werkgroep MIM Metamodel</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       
       <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+    <span class="p-name fn">Paul Janssen</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/">GitHub Geonovum/NL-ReSpec-template</a>
+    <a href="https://github.com/Geonovum/mim-conceptueel/">GitHub Geonovum/mim-conceptueel</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/issues/">All issues</a>
+    <a href="https://github.com/Geonovum/mim-conceptueel/issues/">All issues</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/issues/new/choose">Dien een melding in</a>
+    <a href="https://github.com/Geonovum/mim-conceptueel/issues/new/choose">Dien een melding in</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/commits/">Revisiehistorie</a>
+    <a href="https://github.com/Geonovum/mim-conceptueel/commits/">Revisiehistorie</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-template/pulls/">Pull requests</a>
+    <a href="https://github.com/Geonovum/mim-conceptueel/pulls/">Pull requests</a>
   </dd>
     </dl>
     
@@ -1414,36 +1407,674 @@ ul.index code{color:inherit}
     <hr title="Separator for header">
   </div>
 
-<section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
+<section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het metamodel voor een Conceptueel Informatiemodel (MIM niveau 2). Dit metamodel is zelf een logisch gegevensmodel: het beschrijft de logische structuur van de vastlegging van een conceptueel informatiemodel.</p>
 </section>
-<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#normreferenties"><bdi class="secno">3. </bdi>Normreferenties</a></li><li class="tocline"><a class="tocxref" href="#conformiteit"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#metamodel-cim"><bdi class="secno">5. </bdi>Metamodel CIM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">5.1 </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#structuur-metamodel"><bdi class="secno">5.2 </bdi>Structuur metamodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kern"><bdi class="secno">5.2.1 </bdi>Kern</a></li><li class="tocline"><a class="tocxref" href="#datatypen"><bdi class="secno">5.2.2 </bdi>Datatypen</a></li><li class="tocline"><a class="tocxref" href="#overig"><bdi class="secno">5.2.3 </bdi>Overig</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#constraint"><bdi class="secno">5.2.3.1 </bdi>Constraint</a></li><li class="tocline"><a class="tocxref" href="#keuze"><bdi class="secno">5.2.3.2 </bdi>Keuze</a></li><li class="tocline"><a class="tocxref" href="#packages"><bdi class="secno">5.2.3.3 </bdi>Packages</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#specificaties-metagegevens"><bdi class="secno">5.3 </bdi>Specificaties metagegevens</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformiteit</a></li></ol></nav>
+<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#domein-mim-metaklassen-cim-logisch"><bdi class="secno">1. </bdi>Domein MIM-Metaklassen-CIM-Logisch</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#lgm-cim-mim-detail"><bdi class="secno">1.1 </bdi>LGM-CIM-MIM - detail</a></li><li class="tocline"><a class="tocxref" href="#objecttypes-en-relatieklassen"><bdi class="secno">1.2 </bdi>Objecttypes en relatieklassen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291"><bdi class="secno">1.2.1 </bdi>Attribuuttype</a></li><li class="tocline"><a class="tocxref" href="#A2948621-8D54-4c64-B640-3FFB3D223CE6"><bdi class="secno">1.2.2 </bdi>Begrip</a></li><li class="tocline"><a class="tocxref" href="#924567F9-2141-4876-9AF5-7E4796E0A845"><bdi class="secno">1.2.3 </bdi>Categoriserend waardetype!</a></li><li class="tocline"><a class="tocxref" href="#750E98C4-255B-4b0f-AA70-B25C6242EA6A"><bdi class="secno">1.2.4 </bdi>Codelijst?</a></li><li class="tocline"><a class="tocxref" href="#AF02163D-EA42-4739-A134-E9E43DA37E67"><bdi class="secno">1.2.5 </bdi>Complex waardetype</a></li><li class="tocline"><a class="tocxref" href="#554D263F-A396-4c24-9767-BD58B14B7B97"><bdi class="secno">1.2.6 </bdi>Generalisatie!</a></li><li class="tocline"><a class="tocxref" href="#CEB3BBDF-F417-4069-B2F2-48229021C53A"><bdi class="secno">1.2.7 </bdi>Identificator</a></li><li class="tocline"><a class="tocxref" href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6"><bdi class="secno">1.2.8 </bdi>Objecttype</a></li><li class="tocline"><a class="tocxref" href="#4450F199-653A-41aa-973E-E1A2D7689F81"><bdi class="secno">1.2.9 </bdi>Primitief datatype?</a></li><li class="tocline"><a class="tocxref" href="#87B366A9-A9F1-499f-B6EA-0D79F0A8CA09"><bdi class="secno">1.2.10 </bdi>Referentie-element?</a></li><li class="tocline"><a class="tocxref" href="#A458FD7A-F02C-4e60-ACC1-84ACBAB740F6"><bdi class="secno">1.2.11 </bdi>Referentielijst?</a></li><li class="tocline"><a class="tocxref" href="#51C29EE0-468B-4a10-A9D8-52FD427FCFC1"><bdi class="secno">1.2.12 </bdi>Relatieobjecttype!</a></li><li class="tocline"><a class="tocxref" href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA"><bdi class="secno">1.2.13 </bdi>Relatietype</a></li><li class="tocline"><a class="tocxref" href="#C11E0907-9B14-4123-9A26-4F54539FBFEB"><bdi class="secno">1.2.14 </bdi>Rolinvulling</a></li><li class="tocline"><a class="tocxref" href="#6A085917-90D7-404a-BE30-B1A1DDFAD644"><bdi class="secno">1.2.15 </bdi>Verwoording</a></li><li class="tocline"><a class="tocxref" href="#3C6F95C0-D3C4-4429-82D5-F139299A38CF"><bdi class="secno">1.2.16 </bdi>Waarde-element!</a></li><li class="tocline"><a class="tocxref" href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0"><bdi class="secno">1.2.17 </bdi>Waardetype</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformiteit</a></li></ol></nav>
 
 
-  
-  <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
-</section>
-  <section id="toepassingsgebied"><div class="header-wrapper"><h2 id="x2-toepassingsgebied"><bdi class="secno">2. </bdi>Toepassingsgebied</h2><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 2."></a></div>
-</section>
-  <section id="normreferenties"><div class="header-wrapper"><h2 id="x3-normreferenties"><bdi class="secno">3. </bdi>Normreferenties</h2><a class="self-link" href="#normreferenties" aria-label="Permalink for Section 3."></a></div>
-</section>
-  
-  <section id="conformiteit"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformiteit" aria-label="Permalink for Section 4."></a></div>
-</section>
-  <section id="metamodel-cim"><div class="header-wrapper"><h2 id="x5-metamodel-cim"><bdi class="secno">5. </bdi>Metamodel CIM</h2><a class="self-link" href="#metamodel-cim" aria-label="Permalink for Section 5."></a></div>
-<section id="inleiding-0"><div class="header-wrapper"><h3 id="x5-1-inleiding"><bdi class="secno">5.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 5.1"></a></div>
-</section><section id="structuur-metamodel"><div class="header-wrapper"><h3 id="x5-2-structuur-metamodel"><bdi class="secno">5.2 </bdi>Structuur metamodel</h3><a class="self-link" href="#structuur-metamodel" aria-label="Permalink for Section 5.2"></a></div>
-<section id="kern"><div class="header-wrapper"><h4 id="x5-2-1-kern"><bdi class="secno">5.2.1 </bdi>Kern</h4><a class="self-link" href="#kern" aria-label="Permalink for Section 5.2.1"></a></div>
-</section><section id="datatypen"><div class="header-wrapper"><h4 id="x5-2-2-datatypen"><bdi class="secno">5.2.2 </bdi>Datatypen</h4><a class="self-link" href="#datatypen" aria-label="Permalink for Section 5.2.2"></a></div>
-</section><section id="overig"><div class="header-wrapper"><h4 id="x5-2-3-overig"><bdi class="secno">5.2.3 </bdi>Overig</h4><a class="self-link" href="#overig" aria-label="Permalink for Section 5.2.3"></a></div>
-<section id="constraint"><div class="header-wrapper"><h5 id="x5-2-3-1-constraint"><bdi class="secno">5.2.3.1 </bdi>Constraint</h5><a class="self-link" href="#constraint" aria-label="Permalink for Section 5.2.3.1"></a></div>
-</section><section id="keuze"><div class="header-wrapper"><h5 id="x5-2-3-2-keuze"><bdi class="secno">5.2.3.2 </bdi>Keuze</h5><a class="self-link" href="#keuze" aria-label="Permalink for Section 5.2.3.2"></a></div>
-</section><section id="packages"><div class="header-wrapper"><h5 id="x5-2-3-3-packages"><bdi class="secno">5.2.3.3 </bdi>Packages</h5><a class="self-link" href="#packages" aria-label="Permalink for Section 5.2.3.3"></a></div>
-</section></section></section><section id="specificaties-metagegevens"><div class="header-wrapper"><h3 id="x5-3-specificaties-metagegevens"><bdi class="secno">5.3 </bdi>Specificaties metagegevens</h3><a class="self-link" href="#specificaties-metagegevens" aria-label="Permalink for Section 5.3"></a></div>
-</section></section>
-  
+<section id="domein-mim-metaklassen-cim-logisch"><div class="header-wrapper"><h2 id="x1-domein-mim-metaklassen-cim-logisch"><bdi class="secno">1. </bdi>Domein MIM-Metaklassen-CIM-Logisch</h2><a class="self-link" href="#domein-mim-metaklassen-cim-logisch" aria-label="Permalink for Section 1."></a></div>
+<section id="lgm-cim-mim-detail"><div class="header-wrapper"><h3 id="x1-1-lgm-cim-mim-detail"><bdi class="secno">1.1 </bdi>LGM-CIM-MIM - detail</h3><a class="self-link" href="#lgm-cim-mim-detail" aria-label="Permalink for Section 1.1"></a></div>
+<p><img src="65E36413-AEA9-42f7-81D4-8478285401E2.svg" alt=""></p>
+</section><section id="objecttypes-en-relatieklassen"><div class="header-wrapper"><h3 id="x1-2-objecttypes-en-relatieklassen"><bdi class="secno">1.2 </bdi>Objecttypes en relatieklassen</h3><a class="self-link" href="#objecttypes-en-relatieklassen" aria-label="Permalink for Section 1.2"></a></div>
+<section id="attribuuttype"><div class="header-wrapper"><h4 id="5322E10D-149C-47b9-8FB8-0DE0A2E14291"><bdi class="secno">1.2.1 </bdi>Attribuuttype</h4><a class="self-link" href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291" aria-label="Permalink for Section 1.2.1"></a></div><p>Een attribuuttype is een typering van een [kenmerk], behorende tot een [objecttype] of [relatietype]</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Attribuuttype</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een attribuuttype is een typering van een [kenmerk], behorende tot een [objecttype] of [relatietype]</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Attribuut</th>
+<th>Definitie</th>
+<th>Formaat</th>
+<th>Card</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>naam</td>
+<td></td>
+<td><a href="">CharacterString</a></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>classificerend</td>
+<td>niet in objecttypen uitgewerkte subtypering</td>
+<td><a href="">Boolean</a></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>cardinaliteit</td>
+<td></td>
+<td><a href="">CharacterString</a></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>identificatoronderdeel</td>
+<td>Een identificerend kenmerk is een [kenmerk] waarmee de identiteit van een [domeinobject] mede kan worden vastgesteld</td>
+<td><a href="">Boolean</a></td>
+<td>1..1</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291">Attribuuttype</a> heeft waardetype waardetype <a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a> []</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> heeft attribuuttype  <a href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291">Attribuuttype</a> [0..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#CEB3BBDF-F417-4069-B2F2-48229021C53A">Identificator</a> heeft als onderdeel identificatordeel <a href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291">Attribuuttype</a> [0..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291">Attribuuttype</a> is invulling van een eigenschap eigenschap <a href="#CADD3F4F-2B35-40ac-A85D-C54B59DEF9BB">Eigenschap</a> []</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="begrip"><div class="header-wrapper"><h4 id="A2948621-8D54-4c64-B640-3FFB3D223CE6"><bdi class="secno">1.2.2 </bdi>Begrip</h4><a class="self-link" href="#A2948621-8D54-4c64-B640-3FFB3D223CE6" aria-label="Permalink for Section 1.2.2"></a></div><table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Begrip</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#924567F9-2141-4876-9AF5-7E4796E0A845">Categoriserend waardetype!</a> heeft waardeitems categoriserende waarde <a href="#A2948621-8D54-4c64-B640-3FFB3D223CE6">Begrip</a> [0..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A2948621-8D54-4c64-B640-3FFB3D223CE6">Begrip</a> verwoording van een categorie   [1..*]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="categoriserend-waardetype"><div class="header-wrapper"><h4 id="924567F9-2141-4876-9AF5-7E4796E0A845"><bdi class="secno">1.2.3 </bdi>Categoriserend waardetype!</h4><a class="self-link" href="#924567F9-2141-4876-9AF5-7E4796E0A845" aria-label="Permalink for Section 1.2.3"></a></div><p>dit is een waardelijst</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Categoriserend waardetype!</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>dit is een waardelijst</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#924567F9-2141-4876-9AF5-7E4796E0A845">Categoriserend waardetype!</a> is specialisatie van <a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#924567F9-2141-4876-9AF5-7E4796E0A845">Categoriserend waardetype!</a> heeft waardeitems categoriserende waarde <a href="#A2948621-8D54-4c64-B640-3FFB3D223CE6">Begrip</a> [0..*]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="codelijst"><div class="header-wrapper"><h4 id="750E98C4-255B-4b0f-AA70-B25C6242EA6A"><bdi class="secno">1.2.4 </bdi>Codelijst?</h4><a class="self-link" href="#750E98C4-255B-4b0f-AA70-B25C6242EA6A" aria-label="Permalink for Section 1.2.4"></a></div><table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Codelijst?</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+</tbody></table>
+</section><section id="complex-waardetype"><div class="header-wrapper"><h4 id="AF02163D-EA42-4739-A134-E9E43DA37E67"><bdi class="secno">1.2.5 </bdi>Complex waardetype</h4><a class="self-link" href="#AF02163D-EA42-4739-A134-E9E43DA37E67" aria-label="Permalink for Section 1.2.5"></a></div><p>Een complex waardetype is een typering van gelijksoortige [complexe waarden]</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Complex waardetype</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een complex waardetype is een typering van gelijksoortige [complexe waarden]</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#AF02163D-EA42-4739-A134-E9E43DA37E67">Complex waardetype</a> heeft waarde-element waarde-element <a href="#3C6F95C0-D3C4-4429-82D5-F139299A38CF">Waarde-element!</a> []</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#AF02163D-EA42-4739-A134-E9E43DA37E67">Complex waardetype</a> is specialisatie van <a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="generalisatie"><div class="header-wrapper"><h4 id="554D263F-A396-4c24-9767-BD58B14B7B97"><bdi class="secno">1.2.6 </bdi>Generalisatie!</h4><a class="self-link" href="#554D263F-A396-4c24-9767-BD58B14B7B97" aria-label="Permalink for Section 1.2.6"></a></div><table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Generalisatie!</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#554D263F-A396-4c24-9767-BD58B14B7B97">Generalisatie!</a> heeft specialisatie subtype <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [1..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#554D263F-A396-4c24-9767-BD58B14B7B97">Generalisatie!</a> heeft generalisatie supertype <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [1..1]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="identificator"><div class="header-wrapper"><h4 id="CEB3BBDF-F417-4069-B2F2-48229021C53A"><bdi class="secno">1.2.7 </bdi>Identificator</h4><a class="self-link" href="#CEB3BBDF-F417-4069-B2F2-48229021C53A" aria-label="Permalink for Section 1.2.7"></a></div><p>Een identificator is een geheel van één of meerdere [identificerende kenmerken] waarmee de identiteit van een [domeinobject] uniek kan worden vastgesteld</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Identificator</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een identificator is een geheel van één of meerdere [identificerende kenmerken] waarmee de identiteit van een [domeinobject] uniek kan worden vastgesteld</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> heeft identificator identificator <a href="#CEB3BBDF-F417-4069-B2F2-48229021C53A">Identificator</a> [1..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#CEB3BBDF-F417-4069-B2F2-48229021C53A">Identificator</a> heeft als onderdeel identificatordeel <a href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291">Attribuuttype</a> [0..*]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="objecttype"><div class="header-wrapper"><h4 id="A80A4669-D70D-42cd-9E1D-856E1DFF20F6"><bdi class="secno">1.2.8 </bdi>Objecttype</h4><a class="self-link" href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6" aria-label="Permalink for Section 1.2.8"></a></div><p>Een objecttype is een typering van gelijksoortige [domeinobjecten]</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Objecttype</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een objecttype is een typering van gelijksoortige [domeinobjecten]</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> ingevuld door lijdendvoorwerp <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [1..1]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> heeft als supertype supertype <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [0..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> wordt ingevuld door rolinvuller <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [1..1]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#554D263F-A396-4c24-9767-BD58B14B7B97">Generalisatie!</a> heeft specialisatie subtype <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [1..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> heeft attribuuttype  <a href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291">Attribuuttype</a> [0..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> heeft identificator identificator <a href="#CEB3BBDF-F417-4069-B2F2-48229021C53A">Identificator</a> [1..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> speelt een rol in propositie predikaat <a href="#6A085917-90D7-404a-BE30-B1A1DDFAD644">Verwoording</a> [0..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#554D263F-A396-4c24-9767-BD58B14B7B97">Generalisatie!</a> heeft generalisatie supertype <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [1..1]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> participeert in relatie <a href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA">Relatietype</a> [0..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#51C29EE0-468B-4a10-A9D8-52FD427FCFC1">Relatieobjecttype!</a> is specialisatie van <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> typering van domeinobject <a href="#D15E332C-6C18-4a4d-ADF3-955709DE7AEF">Domeinobject</a> []</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="primitief-datatype"><div class="header-wrapper"><h4 id="4450F199-653A-41aa-973E-E1A2D7689F81"><bdi class="secno">1.2.9 </bdi>Primitief datatype?</h4><a class="self-link" href="#4450F199-653A-41aa-973E-E1A2D7689F81" aria-label="Permalink for Section 1.2.9"></a></div><table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Primitief datatype?</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+</tbody></table>
+</section><section id="referentie-element"><div class="header-wrapper"><h4 id="87B366A9-A9F1-499f-B6EA-0D79F0A8CA09"><bdi class="secno">1.2.10 </bdi>Referentie-element?</h4><a class="self-link" href="#87B366A9-A9F1-499f-B6EA-0D79F0A8CA09" aria-label="Permalink for Section 1.2.10"></a></div><table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Referentie-element?</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+</tbody></table>
+</section><section id="referentielijst"><div class="header-wrapper"><h4 id="A458FD7A-F02C-4e60-ACC1-84ACBAB740F6"><bdi class="secno">1.2.11 </bdi>Referentielijst?</h4><a class="self-link" href="#A458FD7A-F02C-4e60-ACC1-84ACBAB740F6" aria-label="Permalink for Section 1.2.11"></a></div><table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Referentielijst?</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+</tbody></table>
+</section><section id="relatieobjecttype"><div class="header-wrapper"><h4 id="51C29EE0-468B-4a10-A9D8-52FD427FCFC1"><bdi class="secno">1.2.12 </bdi>Relatieobjecttype!</h4><a class="self-link" href="#51C29EE0-468B-4a10-A9D8-52FD427FCFC1" aria-label="Permalink for Section 1.2.12"></a></div><p>Een relatieobjecttype is een typering van gelijksoortige relatiedomeinobjecten.</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Relatieobjecttype!</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een relatieobjecttype is een typering van gelijksoortige relatiedomeinobjecten.</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#51C29EE0-468B-4a10-A9D8-52FD427FCFC1">Relatieobjecttype!</a> is specialisatie van <a href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA">Relatietype</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#51C29EE0-468B-4a10-A9D8-52FD427FCFC1">Relatieobjecttype!</a> is specialisatie van <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a></td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="relatietype"><div class="header-wrapper"><h4 id="771B0E96-D69D-4f75-B1CC-F44F721ABCAA"><bdi class="secno">1.2.13 </bdi>Relatietype</h4><a class="self-link" href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA" aria-label="Permalink for Section 1.2.13"></a></div><p>Een relatietype is een typering van gelijksoortige [relaties]</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Relatietype</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een relatietype is een typering van gelijksoortige [relaties]</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Attribuut</th>
+<th>Definitie</th>
+<th>Formaat</th>
+<th>Card</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>naam</td>
+<td>Opmerking: in UML wordt dit een tagged value. Het is niet de UML:Name. Dat is namelijk de MIM:Verwoording</td>
+<td><a href="">CharacterString</a></td>
+<td>0..1</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA">Relatietype</a> realiseert propositie verwoording <a href="#6A085917-90D7-404a-BE30-B1A1DDFAD644">Verwoording</a> [1..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA">Relatietype</a> heeft relatie-uiteinde relatie-uiteinde <a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> [2..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#51C29EE0-468B-4a10-A9D8-52FD427FCFC1">Relatieobjecttype!</a> is specialisatie van <a href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA">Relatietype</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> participeert in relatie <a href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA">Relatietype</a> [0..*]</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="rolinvulling"><div class="header-wrapper"><h4 id="C11E0907-9B14-4123-9A26-4F54539FBFEB"><bdi class="secno">1.2.14 </bdi>Rolinvulling</h4><a class="self-link" href="#C11E0907-9B14-4123-9A26-4F54539FBFEB" aria-label="Permalink for Section 1.2.14"></a></div><table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Rolinvulling</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Attribuut</th>
+<th>Definitie</th>
+<th>Formaat</th>
+<th>Card</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>naam</td>
+<td>Indien naam niet is ingevuld dan geldt de naam van het objecttype.</td>
+<td><a href="">CharacterString</a></td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>identificatoronderdeel</td>
+<td>Een identificerend kenmerk is een [kenmerk] waarmee de identiteit van een [domeinobject] mede kan worden vastgesteld</td>
+<td><a href="">Boolean</a></td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>cardinaliteit</td>
+<td></td>
+<td><a href="">CharacterString</a></td>
+<td>1..1</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> ingevuld door lijdendvoorwerp <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [1..1]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> wordt ingevuld door rolinvuller <a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> [1..1]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA">Relatietype</a> heeft relatie-uiteinde relatie-uiteinde <a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> [2..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> is invulling van een rol rol <a href="#7DFD3E36-1F3D-4928-A285-2F477880F25D">Rol</a> [1..1]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#6A085917-90D7-404a-BE30-B1A1DDFAD644">Verwoording</a> heeft als doel doel <a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> []</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#6A085917-90D7-404a-BE30-B1A1DDFAD644">Verwoording</a> heeft als bron bron <a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> []</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="verwoording"><div class="header-wrapper"><h4 id="6A085917-90D7-404a-BE30-B1A1DDFAD644"><bdi class="secno">1.2.15 </bdi>Verwoording</h4><a class="self-link" href="#6A085917-90D7-404a-BE30-B1A1DDFAD644" aria-label="Permalink for Section 1.2.15"></a></div><p>Een verwoording is een beschrijving van de manier waarop een voorkomen van een [relatietype] kan worden uitgedrukt in een propositie.</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Verwoording</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een verwoording is een beschrijving van de manier waarop een voorkomen van een [relatietype] kan worden uitgedrukt in een propositie.</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Attribuut</th>
+<th>Definitie</th>
+<th>Formaat</th>
+<th>Card</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>verwoording</td>
+<td></td>
+<td><a href="">CharacterString</a></td>
+<td>1..1</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#771B0E96-D69D-4f75-B1CC-F44F721ABCAA">Relatietype</a> realiseert propositie verwoording <a href="#6A085917-90D7-404a-BE30-B1A1DDFAD644">Verwoording</a> [1..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#A80A4669-D70D-42cd-9E1D-856E1DFF20F6">Objecttype</a> speelt een rol in propositie predikaat <a href="#6A085917-90D7-404a-BE30-B1A1DDFAD644">Verwoording</a> [0..*]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#6A085917-90D7-404a-BE30-B1A1DDFAD644">Verwoording</a> heeft als doel doel <a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> []</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#6A085917-90D7-404a-BE30-B1A1DDFAD644">Verwoording</a> heeft als bron bron <a href="#C11E0907-9B14-4123-9A26-4F54539FBFEB">Rolinvulling</a> []</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="waarde-element"><div class="header-wrapper"><h4 id="3C6F95C0-D3C4-4429-82D5-F139299A38CF"><bdi class="secno">1.2.16 </bdi>Waarde-element!</h4><a class="self-link" href="#3C6F95C0-D3C4-4429-82D5-F139299A38CF" aria-label="Permalink for Section 1.2.16"></a></div><table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Waarde-element!</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#AF02163D-EA42-4739-A134-E9E43DA37E67">Complex waardetype</a> heeft waarde-element waarde-element <a href="#3C6F95C0-D3C4-4429-82D5-F139299A38CF">Waarde-element!</a> []</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#3C6F95C0-D3C4-4429-82D5-F139299A38CF">Waarde-element!</a> heeft waardetype waardetype <a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a> []</td>
+<td></td>
+</tr>
+</tbody></table>
+</section><section id="waardetype"><div class="header-wrapper"><h4 id="3E4E758C-8DD4-4e31-9643-2ED6926EA4B0"><bdi class="secno">1.2.17 </bdi>Waardetype</h4><a class="self-link" href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0" aria-label="Permalink for Section 1.2.17"></a></div><p>Een waardetype is een typering van gelijksoortige [waarden]</p>
+<table class="simple def">
+<thead>
+
+</thead>
+<tbody><tr>
+<th>Naam</th>
+<td>Waardetype</td>
+</tr>
+<tr>
+<th>Indicatie abstract object</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een waardetype is een typering van gelijksoortige [waarden]</td>
+</tr>
+</tbody></table>
+<table class="simple">
+<thead>
+<tr>
+<th>Relatie</th>
+<th>Definitie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#924567F9-2141-4876-9AF5-7E4796E0A845">Categoriserend waardetype!</a> is specialisatie van <a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#5322E10D-149C-47b9-8FB8-0DE0A2E14291">Attribuuttype</a> heeft waardetype waardetype <a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a> []</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#AF02163D-EA42-4739-A134-E9E43DA37E67">Complex waardetype</a> is specialisatie van <a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a> wordt ingevuld door datatype <a href="#09E003D3-8AD7-474d-8291-F8C4C9C8AE90">Datatype</a> [0..1]</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#3C6F95C0-D3C4-4429-82D5-F139299A38CF">Waarde-element!</a> heeft waardetype waardetype <a href="#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0">Waardetype</a> []</td>
+<td></td>
+</tr>
+</tbody></table>
+</section></section></section>
 
 
- 
 
 
 
@@ -1451,7 +2082,9 @@ ul.index code{color:inherit}
 
 
 
-<section id="conformance"><div class="header-wrapper"><h2 id="x6-conformiteit"><bdi class="secno">6. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p>Naast onderdelen die als niet-normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet-normatief. Verder is alles in dit document normatief.</p>
+
+
+<section id="conformance"><div class="header-wrapper"><h2 id="x2-conformiteit"><bdi class="secno">2. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 2."></a></div><p>Naast onderdelen die als niet-normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet-normatief. Verder is alles in dit document normatief.</p>
 <section id="tof">
 <section id="index" class="appendix"><div class="header-wrapper"><h4 id="index-0">Index</h4><a class="self-link" href="#index" aria-label="Permalink for this Appendix"></a></div>
 
