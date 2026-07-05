@@ -1,1 +1,1 @@
-TODO: vul in abstract.md een abstract in.
+Dit document beschrijft het metamodel voor een Conceptueel Informatiemodel (MIM niveau 2). Dit metamodel is zelf een logisch gegevensmodel: het beschrijft de logische structuur van de vastlegging van een conceptueel informatiemodel.

@@ -1,0 +1,881 @@
+PREFIX ea:   <http://www.sparxsystems.eu/def/ea#>
+PREFIX mim:  <http://modellen.mim-standaard.nl/def/mim#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<urn:uuid:65E36413-AEA9-42f7-81D4-8478285401E2>
+        a                 mim:Diagram;
+        rdfs:label        "LGM-CIM-MIM - detail";
+        mim:beschrijft    <urn:uuid:713061EF-71DE-47f4-BC1E-31799C05E3D8>;
+        mim:visualiseert  [ mim:height  44.0;
+                            mim:left    988.5;
+                            mim:object  <urn:uuid:51C29EE0-468B-4a10-A9D8-52FD427FCFC1>;
+                            mim:top     257.0;
+                            mim:width   156.0
+                          ];
+        mim:visualiseert  [ mim:height  65.0;
+                            mim:left    133.5;
+                            mim:object  <urn:uuid:86DB111E-2D78-4ca9-9CDA-77A2002960CB>;
+                            mim:top     315.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:5A566455-43B6-4e3e-AC57-41B95E931F51>;
+                            mim:endX       0.0;
+                            mim:endY       0.0;
+                            mim:path       "440.0 -327.0,440.0 -285.0,360.0 -285.0,360.0 -353.0,431.0 -353.0";
+                            mim:startX     0.0;
+                            mim:startY     0.0
+                          ];
+        mim:visualiseert  [ mim:height  65.0;
+                            mim:left    631.5;
+                            mim:object  <urn:uuid:CD830E4E-8D19-4960-A068-B7C93FAC3C4E>;
+                            mim:top     444.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:1390AAF8-FBBE-4df0-9F1A-CB38AE4CFA80>;
+                            mim:endX       0.0;
+                            mim:endY       0.0;
+                            mim:startX     0.0;
+                            mim:startY     0.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:473F17A2-A6DC-48e7-B184-7F6946C14539>;
+                            mim:endX       46.5;
+                            mim:endY       4.0;
+                            mim:path       "804.0 -503.0,542.0 -503.0";
+                            mim:startX     -52.5;
+                            mim:startY     -42.0
+                          ];
+        mim:visualiseert  [ mim:height  65.0;
+                            mim:left    363.0;
+                            mim:object  <urn:uuid:D15E332C-6C18-4a4d-ADF3-955709DE7AEF>;
+                            mim:top     128.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:5F7A3964-733E-4713-AECE-173534570D36>;
+                            mim:endX       12.0;
+                            mim:endY       -12.0;
+                            mim:startX     12.0;
+                            mim:startY     -12.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:A784D595-17F4-4efa-B0D5-E245522AD73B>;
+                            mim:endX       -132.0;
+                            mim:endY       -30.0;
+                            mim:path       "185.0 -370.0";
+                            mim:startX     -3.0;
+                            mim:startY     4.0
+                          ];
+        mim:visualiseert  [ mim:height  102.0;
+                            mim:left    1144.5;
+                            mim:object  <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB>;
+                            mim:top     716.0;
+                            mim:width   231.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:8A7AD4F7-A346-4f93-A9BF-BF367DAF85A9>;
+                            mim:endX       -10.5;
+                            mim:endY       -4.0;
+                            mim:path       "687.0 -762.0,687.0 -671.0,561.0 -671.0";
+                            mim:startX     -114.0;
+                            mim:startY     -5.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:EE40EB48-AD5A-4b97-BBAF-FBD93E9742B6>;
+                            mim:endX       -63.0;
+                            mim:endY       -22.0;
+                            mim:startX     142.5;
+                            mim:startY     -4.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:9B06B3C6-A339-4506-BE58-B42D6B70F3CC>;
+                            mim:endX       1.5;
+                            mim:endY       9.0;
+                            mim:path       "1037.0 -776.0";
+                            mim:startX     6.0;
+                            mim:startY     18.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:3A62FD5D-1EB0-49a6-BBB7-AC009071D404>;
+                            mim:endX       67.5;
+                            mim:endY       2.0;
+                            mim:startX     -3.0;
+                            mim:startY     44.0
+                          ];
+        mim:visualiseert  [ mim:height  78.0;
+                            mim:left    348.0;
+                            mim:object  <urn:uuid:3C6F95C0-D3C4-4429-82D5-F139299A38CF>;
+                            mim:top     942.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:BB9ECEE0-DDB3-4f20-B1C2-FF7588DA4272>;
+                            mim:endX       21.0;
+                            mim:endY       -7.0;
+                            mim:startX     -70.5;
+                            mim:startY     -7.0
+                          ];
+        mim:visualiseert  [ mim:height  78.0;
+                            mim:left    646.5;
+                            mim:object  <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+                            mim:top     327.0;
+                            mim:width   243.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:82A55D93-B327-4116-B18B-85824E4EB3D4>;
+                            mim:endX       0.0;
+                            mim:endY       0.0;
+                            mim:path       "316.0 -692.0,427.0 -692.0";
+                            mim:startX     64.5;
+                            mim:startY     -1.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:29E2F008-207C-4290-909F-D303BABB4087>;
+                            mim:endX       -4.5;
+                            mim:endY       5.0;
+                            mim:path       "773.0 -581.0,683.0 -581.0,683.0 -447.0,507.0 -447.0";
+                            mim:startX     -99.0;
+                            mim:startY     1.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:D34BB381-B4C0-4b3a-8869-D4759AF04F24>;
+                            mim:endX       -22.5;
+                            mim:endY       -39.0;
+                            mim:startX     -19.5;
+                            mim:startY     23.0
+                          ];
+        mim:visualiseert  [ mim:height  45.0;
+                            mim:left    864.0;
+                            mim:object  <urn:uuid:A2948621-8D54-4c64-B640-3FFB3D223CE6>;
+                            mim:top     1079.0;
+                            mim:width   177.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:910EB5F1-C70C-4410-86C4-AFFD08D7A073>;
+                            mim:endX       34.5;
+                            mim:endY       32.0;
+                            mim:path       "466.0 -246.0,310.0 -246.0";
+                            mim:startX     -69.0;
+                            mim:startY     -39.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:F6863095-C167-4e7a-BD2E-F381E067960A>;
+                            mim:endX       -30.0;
+                            mim:endY       -3.0;
+                            mim:startX     54.0;
+                            mim:startY     -18.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:C5B51E0E-D924-449d-825C-97BEFBE83F7F>;
+                            mim:endX       0.0;
+                            mim:endY       0.0;
+                            mim:path       "134.0 -1103.0";
+                            mim:startX     -7.5;
+                            mim:startY     3.0
+                          ];
+        mim:visualiseert  [ mim:height  70.0;
+                            mim:left    342.0;
+                            mim:object  <urn:uuid:A458FD7A-F02C-4e60-ACC1-84ACBAB740F6>;
+                            mim:top     1177.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:height  45.0;
+                            mim:left    669.0;
+                            mim:object  <urn:uuid:554D263F-A396-4c24-9767-BD58B14B7B97>;
+                            mim:top     128.0;
+                            mim:width   190.5
+                          ];
+        mim:visualiseert  [ mim:height  102.0;
+                            mim:left    1444.5;
+                            mim:object  <urn:uuid:771B0E96-D69D-4f75-B1CC-F44F721ABCAA>;
+                            mim:top     329.0;
+                            mim:width   210.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:27D89849-CA7C-4ef1-B48D-0190E8C05AF8>;
+                            mim:endX       0.0;
+                            mim:endY       0.0;
+                            mim:path       "647.0 -353.0,793.0 -415.0";
+                            mim:startX     36.0;
+                            mim:startY     21.0
+                          ];
+        mim:visualiseert  [ mim:height  128.0;
+                            mim:left    265.5;
+                            mim:object  <urn:uuid:5322E10D-149C-47b9-8FB8-0DE0A2E14291>;
+                            mim:top     713.0;
+                            mim:width   288.0
+                          ];
+        mim:visualiseert  [ mim:height  70.0;
+                            mim:left    333.0;
+                            mim:object  <urn:uuid:4450F199-653A-41aa-973E-E1A2D7689F81>;
+                            mim:top     1282.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:height  91.0;
+                            mim:left    1107.0;
+                            mim:object  <urn:uuid:09E003D3-8AD7-474d-8291-F8C4C9C8AE90>;
+                            mim:top     944.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:height  70.0;
+                            mim:left    132.0;
+                            mim:object  <urn:uuid:87B366A9-A9F1-499f-B6EA-0D79F0A8CA09>;
+                            mim:top     1282.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:0993972A-B786-4f25-8880-4050E06B77EC>;
+                            mim:endX       -78.0;
+                            mim:endY       -27.0;
+                            mim:startX     79.5;
+                            mim:startY     -12.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:22D65C43-C44D-4a8d-BC75-DA9CCF69CFF5>;
+                            mim:endX       0.0;
+                            mim:endY       0.0;
+                            mim:path       "1033.0 -271.0";
+                            mim:startX     78.0;
+                            mim:startY     -8.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:E887311C-F493-422f-87E3-CB194D9A37FE>;
+                            mim:endX       106.5;
+                            mim:endY       5.0;
+                            mim:path       "583.0 -273.0";
+                            mim:startX     -78.0;
+                            mim:startY     -6.0
+                          ];
+        mim:visualiseert  [ mim:height  78.0;
+                            mim:left    885.0;
+                            mim:object  <urn:uuid:924567F9-2141-4876-9AF5-7E4796E0A845>;
+                            mim:top     942.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:7DD914C6-8A60-4228-A9A7-E3A65E1E53EF>;
+                            mim:endX       19.5;
+                            mim:endY       -43.0;
+                            mim:path       "897.0 -372.0";
+                            mim:startX     6.0;
+                            mim:startY     -7.0
+                          ];
+        mim:visualiseert  [ mim:height  45.0;
+                            mim:left    363.0;
+                            mim:object  <urn:uuid:CEB3BBDF-F417-4069-B2F2-48229021C53A>;
+                            mim:top     424.0;
+                            mim:width   156.0
+                          ];
+        mim:visualiseert  [ mim:height  65.0;
+                            mim:left    786.0;
+                            mim:object  <urn:uuid:7DFD3E36-1F3D-4928-A285-2F477880F25D>;
+                            mim:top     583.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:E84EF397-09CD-4681-BD3A-DEAC72516E48>;
+                            mim:endX       0.0;
+                            mim:endY       0.0;
+                            mim:startX     0.0;
+                            mim:startY     0.0
+                          ];
+        mim:visualiseert  [ mim:height  65.0;
+                            mim:left    573.0;
+                            mim:object  <urn:uuid:CADD3F4F-2B35-40ac-A85D-C54B59DEF9BB>;
+                            mim:top     577.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:E647A3DE-A0B2-4629-8D3E-C5A552869514>;
+                            mim:endX       49.5;
+                            mim:endY       -39.0;
+                            mim:startX     49.5;
+                            mim:startY     23.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:2FD1B5FC-C335-42c5-B629-364EACF15711>;
+                            mim:endX       -30.0;
+                            mim:endY       -19.0;
+                            mim:startX     -61.5;
+                            mim:startY     22.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:7AC04C8A-2200-44a9-B4DB-8121EEBABE26>;
+                            mim:endX       -10.5;
+                            mim:endY       0.0;
+                            mim:startX     -12.0;
+                            mim:startY     22.0
+                          ];
+        mim:visualiseert  [ mim:height  78.0;
+                            mim:left    670.5;
+                            mim:object  <urn:uuid:AF02163D-EA42-4739-A134-E9E43DA37E67>;
+                            mim:top     942.0;
+                            mim:width   154.5
+                          ];
+        mim:visualiseert  [ mim:height  78.0;
+                            mim:left    766.5;
+                            mim:object  <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0>;
+                            mim:top     756.0;
+                            mim:width   154.5
+                          ];
+        mim:visualiseert  [ mim:height  78.0;
+                            mim:left    402.0;
+                            mim:object  <urn:uuid:523195A8-9548-40d0-94F8-CFE4EDA55C69>;
+                            mim:top     577.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:EF34048E-A870-435f-8137-493F20B620F0>;
+                            mim:endX       1.5;
+                            mim:endY       -4.0;
+                            mim:startX     -69.0;
+                            mim:startY     44.0
+                          ];
+        mim:visualiseert  [ mim:height  70.0;
+                            mim:left    123.0;
+                            mim:object  <urn:uuid:750E98C4-255B-4b0f-AA70-B25C6242EA6A>;
+                            mim:top     1177.0;
+                            mim:width   135.0
+                          ];
+        mim:visualiseert  [ mim:height  89.0;
+                            mim:left    1212.0;
+                            mim:object  <urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644>;
+                            mim:top     488.0;
+                            mim:width   232.5
+                          ];
+        mim:visualiseert  [ mim:connector  <urn:uuid:2F22E8D2-7F7C-4bb7-95A1-7EE3BB96801E>;
+                            mim:endX       0.0;
+                            mim:endY       -11.0;
+                            mim:startX     3.0;
+                            mim:startY     -16.0
+                          ] .
+
+<urn:uuid-dst:3A62FD5D-1EB0-49a6-BBB7-AC009071D404>
+        a         mim:RelatierolDoel;
+        mim:naam  "bron";
+        mim:type  <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB> .
+
+<urn:uuid:3A62FD5D-1EB0-49a6-BBB7-AC009071D404>
+        a               mim:Relatiesoort;
+        mim:bron        <urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644>;
+        mim:doel        <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB>;
+        mim:naam        "heeft als bron";
+        mim:relatierol  <urn:uuid-dst:3A62FD5D-1EB0-49a6-BBB7-AC009071D404> .
+
+<urn:uuid:D15E332C-6C18-4a4d-ADF3-955709DE7AEF>
+        a                            mim:Objecttype;
+        mim:definitie                "Een domeinobject is een onderscheidbaar en identificeerbaar iets in de beschouwde werkelijkheid";
+        mim:identifier               "D15E332C-6C18-4a4d-ADF3-955709DE7AEF";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Domeinobject" .
+
+<urn:uuid-dst:910EB5F1-C70C-4410-86C4-AFFD08D7A073>
+        a         mim:RelatierolDoel;
+        mim:naam  "domeinobject";
+        mim:type  <urn:uuid:D15E332C-6C18-4a4d-ADF3-955709DE7AEF> .
+
+<urn:uuid:910EB5F1-C70C-4410-86C4-AFFD08D7A073>
+        a               mim:Relatiesoort;
+        mim:bron        <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:doel        <urn:uuid:D15E332C-6C18-4a4d-ADF3-955709DE7AEF>;
+        mim:naam        "typering van";
+        mim:relatierol  <urn:uuid-dst:910EB5F1-C70C-4410-86C4-AFFD08D7A073> .
+
+<urn:uuid:4450F199-653A-41aa-973E-E1A2D7689F81>
+        a                            mim:Objecttype;
+        mim:identifier               "4450F199-653A-41aa-973E-E1A2D7689F81";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Primitief datatype?" .
+
+<urn:uuid-dst:E647A3DE-A0B2-4629-8D3E-C5A552869514>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "1..*";
+        mim:naam           "subtype";
+        mim:type           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6> .
+
+<urn:uuid:E647A3DE-A0B2-4629-8D3E-C5A552869514>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:554D263F-A396-4c24-9767-BD58B14B7B97>;
+        mim:doel           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:kardinaliteit  "1..*";
+        mim:naam           "heeft specialisatie";
+        mim:relatierol     <urn:uuid-dst:E647A3DE-A0B2-4629-8D3E-C5A552869514> .
+
+<urn:uuid:750E98C4-255B-4b0f-AA70-B25C6242EA6A>
+        a                            mim:Objecttype;
+        mim:identifier               "750E98C4-255B-4b0f-AA70-B25C6242EA6A";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Codelijst?" .
+
+<urn:uuid-dst:EE40EB48-AD5A-4b97-BBAF-FBD93E9742B6>
+        a         mim:RelatierolDoel;
+        mim:naam  "waardetype";
+        mim:type  <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0> .
+
+<urn:uuid:EE40EB48-AD5A-4b97-BBAF-FBD93E9742B6>
+        a               mim:Relatiesoort;
+        mim:bron        <urn:uuid:5322E10D-149C-47b9-8FB8-0DE0A2E14291>;
+        mim:doel        <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0>;
+        mim:naam        "heeft waardetype";
+        mim:relatierol  <urn:uuid-dst:EE40EB48-AD5A-4b97-BBAF-FBD93E9742B6> .
+
+<urn:uuid:AF02163D-EA42-4739-A134-E9E43DA37E67>
+        a                            mim:Objecttype;
+        mim:definitie                "Een complex waardetype is een typering van gelijksoortige [complexe waarden]";
+        mim:identifier               "AF02163D-EA42-4739-A134-E9E43DA37E67";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Complex waardetype" .
+
+<urn:uuid-dst:F6863095-C167-4e7a-BD2E-F381E067960A>
+        a         mim:RelatierolDoel;
+        mim:naam  "waardetype";
+        mim:type  <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0> .
+
+<urn:uuid:F6863095-C167-4e7a-BD2E-F381E067960A>
+        a               mim:Relatiesoort;
+        mim:bron        <urn:uuid:3C6F95C0-D3C4-4429-82D5-F139299A38CF>;
+        mim:doel        <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0>;
+        mim:naam        "heeft waardetype";
+        mim:relatierol  <urn:uuid-dst:F6863095-C167-4e7a-BD2E-F381E067960A> .
+
+<urn:uuid-dst:7DD914C6-8A60-4228-A9A7-E3A65E1E53EF>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "1..*";
+        mim:naam           "verwoording";
+        mim:type           <urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644> .
+
+<urn:uuid:7DD914C6-8A60-4228-A9A7-E3A65E1E53EF>
+        a                   mim:Relatiesoort;
+        mim:aggregatietype  mim:Compositie;
+        mim:bron            <urn:uuid:771B0E96-D69D-4f75-B1CC-F44F721ABCAA>;
+        mim:doel            <urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644>;
+        mim:kardinaliteit   "1..*";
+        mim:naam            "realiseert propositie";
+        mim:relatierol      <urn:uuid-dst:7DD914C6-8A60-4228-A9A7-E3A65E1E53EF> .
+
+<urn:uuid:3C6F95C0-D3C4-4429-82D5-F139299A38CF>
+        a                            mim:Objecttype;
+        mim:identifier               "3C6F95C0-D3C4-4429-82D5-F139299A38CF";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Waarde-element!" .
+
+<urn:uuid-dst:BB9ECEE0-DDB3-4f20-B1C2-FF7588DA4272>
+        a         mim:RelatierolDoel;
+        mim:naam  "waarde-element";
+        mim:type  <urn:uuid:3C6F95C0-D3C4-4429-82D5-F139299A38CF> .
+
+<urn:uuid:BB9ECEE0-DDB3-4f20-B1C2-FF7588DA4272>
+        a               mim:Relatiesoort;
+        mim:bron        <urn:uuid:AF02163D-EA42-4739-A134-E9E43DA37E67>;
+        mim:doel        <urn:uuid:3C6F95C0-D3C4-4429-82D5-F139299A38CF>;
+        mim:naam        "heeft waarde-element";
+        mim:relatierol  <urn:uuid-dst:BB9ECEE0-DDB3-4f20-B1C2-FF7588DA4272> .
+
+<urn:uuid:51C29EE0-468B-4a10-A9D8-52FD427FCFC1>
+        a                            mim:Objecttype;
+        mim:definitie                "Een relatieobjecttype is een typering van gelijksoortige relatiedomeinobjecten.";
+        mim:identifier               "51C29EE0-468B-4a10-A9D8-52FD427FCFC1";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Relatieobjecttype!" .
+
+<urn:uuid-dst:473F17A2-A6DC-48e7-B184-7F6946C14539>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "rolinvuller";
+        mim:type           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6> .
+
+<urn:uuid:473F17A2-A6DC-48e7-B184-7F6946C14539>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB>;
+        mim:doel           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "wordt ingevuld door";
+        mim:relatierol     <urn:uuid-dst:473F17A2-A6DC-48e7-B184-7F6946C14539> .
+
+<urn:uuid:554D263F-A396-4c24-9767-BD58B14B7B97>
+        a                            mim:Objecttype;
+        mim:identifier               "554D263F-A396-4c24-9767-BD58B14B7B97";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Generalisatie!" .
+
+<urn:uuid-dst:9B06B3C6-A339-4506-BE58-B42D6B70F3CC>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "2..*";
+        mim:naam           "relatie-uiteinde";
+        mim:type           <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB> .
+
+<urn:uuid:9B06B3C6-A339-4506-BE58-B42D6B70F3CC>
+        a                   mim:Relatiesoort;
+        mim:aggregatietype  mim:Compositie;
+        mim:bron            <urn:uuid:771B0E96-D69D-4f75-B1CC-F44F721ABCAA>;
+        mim:doel            <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB>;
+        mim:kardinaliteit   "2..*";
+        mim:naam            "heeft relatie-uiteinde";
+        mim:relatierol      <urn:uuid-dst:9B06B3C6-A339-4506-BE58-B42D6B70F3CC> .
+
+<urn:uuid-dst:29E2F008-207C-4290-909F-D303BABB4087>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "lijdendvoorwerp";
+        mim:type           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6> .
+
+<urn:uuid:29E2F008-207C-4290-909F-D303BABB4087>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB>;
+        mim:doel           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "ingevuld door";
+        mim:relatierol     <urn:uuid-dst:29E2F008-207C-4290-909F-D303BABB4087> .
+
+<urn:uuid-src:27D89849-CA7C-4ef1-B48D-0190E8C05AF8>
+        a         mim:RelatierolBron;
+        mim:naam  "onderwerp";
+        mim:type  <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6> .
+
+<urn:uuid-dst:27D89849-CA7C-4ef1-B48D-0190E8C05AF8>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "predikaat";
+        mim:type           <urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644> .
+
+<urn:uuid:27D89849-CA7C-4ef1-B48D-0190E8C05AF8>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:doel           <urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644>;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "speelt een rol in propositie";
+        mim:relatierol     <urn:uuid-src:27D89849-CA7C-4ef1-B48D-0190E8C05AF8> , <urn:uuid-dst:27D89849-CA7C-4ef1-B48D-0190E8C05AF8> .
+
+<urn:uuid-dst:0993972A-B786-4f25-8880-4050E06B77EC>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "relatie";
+        mim:type           <urn:uuid:771B0E96-D69D-4f75-B1CC-F44F721ABCAA> .
+
+<urn:uuid:0993972A-B786-4f25-8880-4050E06B77EC>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:doel           <urn:uuid:771B0E96-D69D-4f75-B1CC-F44F721ABCAA>;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "participeert in";
+        mim:relatierol     <urn:uuid-dst:0993972A-B786-4f25-8880-4050E06B77EC> .
+
+<urn:uuid-dst:5A566455-43B6-4e3e-AC57-41B95E931F51>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "supertype";
+        mim:type           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6> .
+
+<urn:uuid:5A566455-43B6-4e3e-AC57-41B95E931F51>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:doel           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "heeft als supertype";
+        mim:relatierol     <urn:uuid-dst:5A566455-43B6-4e3e-AC57-41B95E931F51> .
+
+<urn:uuid:A2948621-8D54-4c64-B640-3FFB3D223CE6>
+        a                            mim:Objecttype;
+        mim:identifier               "A2948621-8D54-4c64-B640-3FFB3D223CE6";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Begrip" .
+
+<urn:uuid-dst:7AC04C8A-2200-44a9-B4DB-8121EEBABE26>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "categoriserende waarde";
+        mim:type           <urn:uuid:A2948621-8D54-4c64-B640-3FFB3D223CE6> .
+
+<urn:uuid:7AC04C8A-2200-44a9-B4DB-8121EEBABE26>
+        a                   mim:Relatiesoort;
+        mim:aggregatietype  mim:Aggregatie;
+        mim:bron            <urn:uuid:924567F9-2141-4876-9AF5-7E4796E0A845>;
+        mim:doel            <urn:uuid:A2948621-8D54-4c64-B640-3FFB3D223CE6>;
+        mim:kardinaliteit   "0..*";
+        mim:naam            "heeft waardeitems";
+        mim:relatierol      <urn:uuid-dst:7AC04C8A-2200-44a9-B4DB-8121EEBABE26> .
+
+<urn:uuid-dst:2FD1B5FC-C335-42c5-B629-364EACF15711>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "identificatordeel";
+        mim:type           <urn:uuid:5322E10D-149C-47b9-8FB8-0DE0A2E14291> .
+
+<urn:uuid:2FD1B5FC-C335-42c5-B629-364EACF15711>
+        a                   mim:Relatiesoort;
+        mim:aggregatietype  mim:Aggregatie;
+        mim:bron            <urn:uuid:CEB3BBDF-F417-4069-B2F2-48229021C53A>;
+        mim:doel            <urn:uuid:5322E10D-149C-47b9-8FB8-0DE0A2E14291>;
+        mim:kardinaliteit   "0..*";
+        mim:naam            "heeft als onderdeel";
+        mim:relatierol      <urn:uuid-dst:2FD1B5FC-C335-42c5-B629-364EACF15711> .
+
+<urn:uuid:09E003D3-8AD7-474d-8291-F8C4C9C8AE90>
+        a                            mim:Objecttype;
+        mim:definitie                "Een datatype is een conditie waarbij van een kenmerk of waarde is gesteld wat voor datatype de waarde of invulling van dat kenmerk mag zijn.";
+        mim:identifier               "09E003D3-8AD7-474d-8291-F8C4C9C8AE90";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Datatype" .
+
+<urn:uuid-dst:5F7A3964-733E-4713-AECE-173534570D36>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "0..1";
+        mim:naam           "datatype";
+        mim:type           <urn:uuid:09E003D3-8AD7-474d-8291-F8C4C9C8AE90> .
+
+<urn:uuid:5F7A3964-733E-4713-AECE-173534570D36>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0>;
+        mim:doel           <urn:uuid:09E003D3-8AD7-474d-8291-F8C4C9C8AE90>;
+        mim:kardinaliteit  "0..1";
+        mim:naam           "wordt ingevuld door";
+        mim:relatierol     <urn:uuid-dst:5F7A3964-733E-4713-AECE-173534570D36> .
+
+<urn:uuid:C5B51E0E-D924-449d-825C-97BEFBE83F7F>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:A2948621-8D54-4c64-B640-3FFB3D223CE6>;
+        mim:doel           <urn:uuid:86DB111E-2D78-4ca9-9CDA-77A2002960CB>;
+        mim:kardinaliteit  "1..*";
+        mim:naam           "verwoording van een categorie" .
+
+<urn:uuid:130793CF-58C8-4942-B545-47EB5FB8CF9E>
+        a                  mim:Attribuutsoort;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "cardinaliteit";
+        mim:type           <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
+
+<urn:uuid:AF6E71B7-FD71-43d5-95C9-F547B845CA2C>
+        a                  mim:Attribuutsoort;
+        mim:definitie      "Indien naam niet is ingevuld dan geldt de naam van het objecttype.";
+        mim:kardinaliteit  "0..1";
+        mim:naam           "naam";
+        mim:type           <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
+
+<urn:uuid:D484F8C3-7606-48e7-BC20-4FC1DC59D112>
+        a                               mim:Attribuutsoort;
+        mim:alias                       "";
+        mim:begripsterm                 "";
+        mim:datumOpname                 "";
+        mim:definitie                   "Een identificerend kenmerk is een [kenmerk] waarmee de identiteit van een [domeinobject] mede kan worden vastgesteld";
+        mim:formeelPatroon              "";
+        mim:herkomst                    "";
+        mim:herkomstDefinitie           "";
+        mim:indicatieFormeleHistorie    false;
+        mim:indicatieMaterieleHistorie  false;
+        mim:kardinaliteit               "1..1";
+        mim:lengte                      "";
+        mim:naam                        "identificatoronderdeel";
+        mim:type                        <urn:uuid:6D9078A3-14CB-4b1f-85A5-15207CBBBDDA> .
+
+<urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB>
+        a                            mim:Objecttype;
+        mim:attribuut                <urn:uuid:130793CF-58C8-4942-B545-47EB5FB8CF9E> , <urn:uuid:AF6E71B7-FD71-43d5-95C9-F547B845CA2C> , <urn:uuid:D484F8C3-7606-48e7-BC20-4FC1DC59D112>;
+        mim:identifier               "C11E0907-9B14-4123-9A26-4F54539FBFEB";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Rolinvulling" .
+
+<urn:uuid-dst:EF34048E-A870-435f-8137-493F20B620F0>
+        a         mim:RelatierolDoel;
+        mim:naam  "doel";
+        mim:type  <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB> .
+
+<urn:uuid:EF34048E-A870-435f-8137-493F20B620F0>
+        a               mim:Relatiesoort;
+        mim:bron        <urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644>;
+        mim:doel        <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB>;
+        mim:naam        "heeft als doel";
+        mim:relatierol  <urn:uuid-dst:EF34048E-A870-435f-8137-493F20B620F0> .
+
+<urn:uuid:22D65C43-C44D-4a8d-BC75-DA9CCF69CFF5>
+        a              mim:Generalisatie;
+        mim:subtype    <urn:uuid:51C29EE0-468B-4a10-A9D8-52FD427FCFC1>;
+        mim:supertype  <urn:uuid:771B0E96-D69D-4f75-B1CC-F44F721ABCAA> .
+
+<urn:uuid:924567F9-2141-4876-9AF5-7E4796E0A845>
+        a                            mim:Objecttype;
+        mim:definitie                "dit is een waardelijst";
+        mim:identifier               "924567F9-2141-4876-9AF5-7E4796E0A845";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Categoriserend waardetype!" .
+
+<urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>
+        a                            mim:Objecttype;
+        mim:definitie                "Een objecttype is een typering van gelijksoortige [domeinobjecten]";
+        mim:identifier               "A80A4669-D70D-42cd-9E1D-856E1DFF20F6";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Objecttype" .
+
+<urn:uuid-dst:D34BB381-B4C0-4b3a-8869-D4759AF04F24>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "supertype";
+        mim:type           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6> .
+
+<urn:uuid:D34BB381-B4C0-4b3a-8869-D4759AF04F24>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:554D263F-A396-4c24-9767-BD58B14B7B97>;
+        mim:doel           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "heeft generalisatie";
+        mim:relatierol     <urn:uuid-dst:D34BB381-B4C0-4b3a-8869-D4759AF04F24> .
+
+<urn:uuid:7DFD3E36-1F3D-4928-A285-2F477880F25D>
+        a                            mim:Objecttype;
+        mim:definitie                "Een rol is een [kenmerk] dat wordt vervuld door een [domeinobject] in een [relatie]";
+        mim:identifier               "7DFD3E36-1F3D-4928-A285-2F477880F25D";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Rol" .
+
+<urn:uuid-dst:8A7AD4F7-A346-4f93-A9BF-BF367DAF85A9>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "rol";
+        mim:type           <urn:uuid:7DFD3E36-1F3D-4928-A285-2F477880F25D> .
+
+<urn:uuid:8A7AD4F7-A346-4f93-A9BF-BF367DAF85A9>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB>;
+        mim:doel           <urn:uuid:7DFD3E36-1F3D-4928-A285-2F477880F25D>;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "is invulling van een rol";
+        mim:relatierol     <urn:uuid-dst:8A7AD4F7-A346-4f93-A9BF-BF367DAF85A9> .
+
+<urn:uuid:A458FD7A-F02C-4e60-ACC1-84ACBAB740F6>
+        a                            mim:Objecttype;
+        mim:identifier               "A458FD7A-F02C-4e60-ACC1-84ACBAB740F6";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Referentielijst?" .
+
+<urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0>
+        a                            mim:Objecttype;
+        mim:definitie                "Een waardetype is een typering van gelijksoortige [waarden]";
+        mim:identifier               "3E4E758C-8DD4-4e31-9643-2ED6926EA4B0";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Waardetype" .
+
+<urn:uuid:E887311C-F493-422f-87E3-CB194D9A37FE>
+        a              mim:Generalisatie;
+        mim:subtype    <urn:uuid:51C29EE0-468B-4a10-A9D8-52FD427FCFC1>;
+        mim:supertype  <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6> .
+
+<urn:uuid:5544F886-A658-4c58-990C-C5473A9B6B85>
+        a                  mim:Attribuutsoort;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "cardinaliteit";
+        mim:type           <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
+
+<urn:uuid:A96530D5-8912-4518-BCEC-27960DAB9B92>
+        a                  mim:Attribuutsoort;
+        mim:definitie      "niet in objecttypen uitgewerkte subtypering";
+        mim:kardinaliteit  "1..1";
+        mim:naam           "classificerend";
+        mim:type           <urn:uuid:6D9078A3-14CB-4b1f-85A5-15207CBBBDDA> .
+
+<urn:uuid:6D9078A3-14CB-4b1f-85A5-15207CBBBDDA>
+        a                            mim:PrimitiefDatatype;
+        mim:definitie                "-- Definitie -- \r\nIndicatie met mogelijke waarden True, false, 1 of 0. True en 1 hebben een identieke betekenis: Ja. False en 0 hebben een identieke betekenis: Nee. Opmerking: t.a.v. Ja of Nee.";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Boolean";
+        mim:toelichting              "Wanneer u de Ja of Nee wilt gebruiken, gebruik dan bv. een Enumeratie genaamd Indicatie, of gebruik AN met een lengte en een (formeel) patroon." .
+
+<urn:uuid:A61B56CF-FCD3-4a08-AEA3-461D8C7149F7>
+        a                  mim:Attribuutsoort;
+        mim:definitie      "Een identificerend kenmerk is een [kenmerk] waarmee de identiteit van een [domeinobject] mede kan worden vastgesteld";
+        mim:kardinaliteit  "1..1";
+        mim:naam           "identificatoronderdeel";
+        mim:type           <urn:uuid:6D9078A3-14CB-4b1f-85A5-15207CBBBDDA> .
+
+<urn:uuid:565FCB3B-7927-4c8d-A3A9-CA4892EA8634>
+        a                  mim:Attribuutsoort;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "naam";
+        mim:type           <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
+
+<urn:uuid:5322E10D-149C-47b9-8FB8-0DE0A2E14291>
+        a                            mim:Objecttype;
+        mim:attribuut                <urn:uuid:5544F886-A658-4c58-990C-C5473A9B6B85> , <urn:uuid:A96530D5-8912-4518-BCEC-27960DAB9B92> , <urn:uuid:A61B56CF-FCD3-4a08-AEA3-461D8C7149F7> , <urn:uuid:565FCB3B-7927-4c8d-A3A9-CA4892EA8634>;
+        mim:definitie                "Een attribuuttype is een typering van een [kenmerk], behorende tot een [objecttype] of [relatietype]";
+        mim:identifier               "5322E10D-149C-47b9-8FB8-0DE0A2E14291";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Attribuuttype" .
+
+<urn:uuid:A784D595-17F4-4efa-B0D5-E245522AD73B>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:doel           <urn:uuid:5322E10D-149C-47b9-8FB8-0DE0A2E14291>;
+        mim:kardinaliteit  "0..*";
+        mim:naam           "heeft attribuuttype" .
+
+<urn:uuid-dst:E84EF397-09CD-4681-BD3A-DEAC72516E48>
+        a                  mim:RelatierolDoel;
+        mim:kardinaliteit  "1..*";
+        mim:naam           "identificator";
+        mim:type           <urn:uuid:CEB3BBDF-F417-4069-B2F2-48229021C53A> .
+
+<urn:uuid:E84EF397-09CD-4681-BD3A-DEAC72516E48>
+        a                  mim:Relatiesoort;
+        mim:bron           <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6>;
+        mim:doel           <urn:uuid:CEB3BBDF-F417-4069-B2F2-48229021C53A>;
+        mim:kardinaliteit  "1..*";
+        mim:naam           "heeft identificator";
+        mim:relatierol     <urn:uuid-dst:E84EF397-09CD-4681-BD3A-DEAC72516E48> .
+
+<urn:uuid:CADD3F4F-2B35-40ac-A85D-C54B59DEF9BB>
+        a                            mim:Objecttype;
+        mim:definitie                "Een eigenschap is een [kenmerk] van een [domeinobject] waar uitsluitend een [waarde] aan kan worden toegekend";
+        mim:identifier               "CADD3F4F-2B35-40ac-A85D-C54B59DEF9BB";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Eigenschap" .
+
+<urn:uuid-dst:82A55D93-B327-4116-B18B-85824E4EB3D4>
+        a         mim:RelatierolDoel;
+        mim:naam  "eigenschap";
+        mim:type  <urn:uuid:CADD3F4F-2B35-40ac-A85D-C54B59DEF9BB> .
+
+<urn:uuid:82A55D93-B327-4116-B18B-85824E4EB3D4>
+        a               mim:Relatiesoort;
+        mim:bron        <urn:uuid:5322E10D-149C-47b9-8FB8-0DE0A2E14291>;
+        mim:doel        <urn:uuid:CADD3F4F-2B35-40ac-A85D-C54B59DEF9BB>;
+        mim:naam        "is invulling van een eigenschap";
+        mim:relatierol  <urn:uuid-dst:82A55D93-B327-4116-B18B-85824E4EB3D4> .
+
+<urn:uuid:87B366A9-A9F1-499f-B6EA-0D79F0A8CA09>
+        a                            mim:Objecttype;
+        mim:identifier               "87B366A9-A9F1-499f-B6EA-0D79F0A8CA09";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Referentie-element?" .
+
+<urn:uuid:CEB3BBDF-F417-4069-B2F2-48229021C53A>
+        a                            mim:Objecttype;
+        mim:definitie                "Een identificator is een geheel van één of meerdere [identificerende kenmerken] waarmee de identiteit van een [domeinobject] uniek kan worden vastgesteld";
+        mim:identifier               "CEB3BBDF-F417-4069-B2F2-48229021C53A";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Identificator" .
+
+<urn:uuid:1390AAF8-FBBE-4df0-9F1A-CB38AE4CFA80>
+        a              mim:Generalisatie;
+        mim:subtype    <urn:uuid:924567F9-2141-4876-9AF5-7E4796E0A845>;
+        mim:supertype  <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0> .
+
+<urn:uuid:2F22E8D2-7F7C-4bb7-95A1-7EE3BB96801E>
+        a              mim:Generalisatie;
+        mim:subtype    <urn:uuid:AF02163D-EA42-4739-A134-E9E43DA37E67>;
+        mim:supertype  <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0> .
+
+<urn:uuid:B6A52F19-EC1E-42fb-B65A-4212D260D751>
+        a                  mim:Attribuutsoort;
+        mim:definitie      "Opmerking: in UML wordt dit een tagged value. Het is niet de UML:Name. Dat is namelijk de MIM:Verwoording";
+        mim:kardinaliteit  "0..1";
+        mim:naam           "naam";
+        mim:type           <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
+
+<urn:uuid:771B0E96-D69D-4f75-B1CC-F44F721ABCAA>
+        a                            mim:Objecttype;
+        mim:attribuut                <urn:uuid:B6A52F19-EC1E-42fb-B65A-4212D260D751>;
+        mim:definitie                "Een relatietype is een typering van gelijksoortige [relaties]";
+        mim:identifier               "771B0E96-D69D-4f75-B1CC-F44F721ABCAA";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Relatietype" .
+
+<urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8>
+        a                            mim:PrimitiefDatatype;
+        mim:definitie                "-- Definitie -- \r\nZie [iso-19103]. Vrij vertaald: alle alfanumerieke tekens en speciale tekens die horen bij de gekozen characterset (standaard UTF-8), dus met diakrieten, white spaces, \\-teken en newlines of HTML opmaak e.d. Mag starten met spatie. De maximale lengte is onbepaald.";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "CharacterString";
+        mim:toelichting              "Opmerking: getallen (ISO Numbers) met voorloopnullen worden opgenomen als CharacterString, met een patroon of formeel patroon. Bij het metagegeven Waardenverzameling attribuutsoort wordt dit dan (ook) gespecificeerd." .
+
+<urn:uuid:428C9F9F-D50C-4674-8880-A42806B51DBC>
+        a                  mim:Attribuutsoort;
+        mim:kardinaliteit  "1..1";
+        mim:naam           "verwoording";
+        mim:type           <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
+
+<urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644>
+        a                            mim:Objecttype;
+        mim:attribuut                <urn:uuid:428C9F9F-D50C-4674-8880-A42806B51DBC>;
+        mim:definitie                "Een verwoording is een beschrijving van de manier waarop een voorkomen van een [relatietype] kan worden uitgedrukt in een propositie.";
+        mim:identifier               "6A085917-90D7-404a-BE30-B1A1DDFAD644";
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "Verwoording" .
+
+<urn:uuid:713061EF-71DE-47f4-BC1E-31799C05E3D8>
+        a                            mim:Domein;
+        mim:bevatModelelement        <urn:uuid:3A62FD5D-1EB0-49a6-BBB7-AC009071D404> , <urn:uuid:3C6F95C0-D3C4-4429-82D5-F139299A38CF> , <urn:uuid:910EB5F1-C70C-4410-86C4-AFFD08D7A073> , <urn:uuid:4450F199-653A-41aa-973E-E1A2D7689F81> , <urn:uuid:E647A3DE-A0B2-4629-8D3E-C5A552869514> , <urn:uuid:750E98C4-255B-4b0f-AA70-B25C6242EA6A> , <urn:uuid:EE40EB48-AD5A-4b97-BBAF-FBD93E9742B6> , <urn:uuid:A2948621-8D54-4c64-B640-3FFB3D223CE6> , <urn:uuid:AF02163D-EA42-4739-A134-E9E43DA37E67> , <urn:uuid:F6863095-C167-4e7a-BD2E-F381E067960A> , <urn:uuid:7DD914C6-8A60-4228-A9A7-E3A65E1E53EF> , <urn:uuid:BB9ECEE0-DDB3-4f20-B1C2-FF7588DA4272> , <urn:uuid:51C29EE0-468B-4a10-A9D8-52FD427FCFC1> , <urn:uuid:473F17A2-A6DC-48e7-B184-7F6946C14539> , <urn:uuid:554D263F-A396-4c24-9767-BD58B14B7B97> , <urn:uuid:C11E0907-9B14-4123-9A26-4F54539FBFEB> , <urn:uuid:9B06B3C6-A339-4506-BE58-B42D6B70F3CC> , <urn:uuid:29E2F008-207C-4290-909F-D303BABB4087> , <urn:uuid:27D89849-CA7C-4ef1-B48D-0190E8C05AF8> , <urn:uuid:0993972A-B786-4f25-8880-4050E06B77EC> , <urn:uuid:5A566455-43B6-4e3e-AC57-41B95E931F51> , <urn:uuid:7AC04C8A-2200-44a9-B4DB-8121EEBABE26> , <urn:uuid:2FD1B5FC-C335-42c5-B629-364EACF15711> , <urn:uuid:5F7A3964-733E-4713-AECE-173534570D36> , <urn:uuid:C5B51E0E-D924-449d-825C-97BEFBE83F7F> , <urn:uuid:A80A4669-D70D-42cd-9E1D-856E1DFF20F6> , <urn:uuid:EF34048E-A870-435f-8137-493F20B620F0> , <urn:uuid:22D65C43-C44D-4a8d-BC75-DA9CCF69CFF5> , <urn:uuid:924567F9-2141-4876-9AF5-7E4796E0A845> , <urn:uuid:6A085917-90D7-404a-BE30-B1A1DDFAD644> , <urn:uuid:771B0E96-D69D-4f75-B1CC-F44F721ABCAA> , <urn:uuid:2F22E8D2-7F7C-4bb7-95A1-7EE3BB96801E> , <urn:uuid:1390AAF8-FBBE-4df0-9F1A-CB38AE4CFA80> , <urn:uuid:CEB3BBDF-F417-4069-B2F2-48229021C53A> , <urn:uuid:87B366A9-A9F1-499f-B6EA-0D79F0A8CA09> , <urn:uuid:82A55D93-B327-4116-B18B-85824E4EB3D4> , <urn:uuid:E84EF397-09CD-4681-BD3A-DEAC72516E48> , <urn:uuid:A784D595-17F4-4efa-B0D5-E245522AD73B> , <urn:uuid:5322E10D-149C-47b9-8FB8-0DE0A2E14291> , <urn:uuid:E887311C-F493-422f-87E3-CB194D9A37FE> , <urn:uuid:3E4E758C-8DD4-4e31-9643-2ED6926EA4B0> , <urn:uuid:A458FD7A-F02C-4e60-ACC1-84ACBAB740F6> , <urn:uuid:8A7AD4F7-A346-4f93-A9BF-BF367DAF85A9> , <urn:uuid:D34BB381-B4C0-4b3a-8869-D4759AF04F24>;
+        mim:indicatieAbstractObject  false;
+        mim:naam                     "MIM-Metaklassen-CIM-Logisch" .
