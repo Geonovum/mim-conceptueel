@@ -2,9 +2,11 @@
 
 ### LGM-CIM-MIM - detail
 
-![](media/65E36413-AEA9-42f7-81D4-8478285401E2.svg)
+![](media/LGM-CIM-MIM-detail.png)
 
 ## Objecttypes en relatieklassen
+
+DEZE LOPEN NOG NIET SYNCHROON MET HET MODEL!
 
 ### Attribuuttype {#5322E10D-149C-47b9-8FB8-0DE0A2E14291}
 
