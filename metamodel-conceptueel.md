@@ -6,31 +6,32 @@
 
 ## Objecttypes en relatieklassen
 
-DEZE LOPEN NOG NIET SYNCHROON MET HET MODEL!
-
 ### Attribuuttype {#5322E10D-149C-47b9-8FB8-0DE0A2E14291}
 
 Een attribuuttype is een typering van een [kenmerk], behorende tot een [objecttype] of [relatietype]
 
 |{: .def}||
 |-|-|
+|Definitie|Een attribuuttype is een typering van een [kenmerk], behorende tot een [objecttype] of [relatietype]|
 |Naam|Attribuuttype|
 |Indicatie abstract object|Nee|
-|Definitie|Een attribuuttype is een typering van een [kenmerk], behorende tot een [objecttype] of [relatietype]|
 
 |Attribuut|Definitie|Formaat|Card|
 |---------|---------|-------|----|
+|isId-concept|Een Id van een domeinobjecttype is een specificatie van de set van eigenschaptypen (1..*) waarmee 1 domeinobject uniek bepaald kan worden||1..1|
 |naam||[CharacterString]()|1..1|
 |classificerend|niet in objecttypen uitgewerkte subtypering|[Boolean]()|1..1|
+|isId-werkelijk|Een Id van een domeinobject, waarbij elk attribuut in de set intrinsiek is, en waarmee het domeinobject ge&#239;dentificeerd kan worden. Deze kan enkelvoudig of samengesteld zijn.||1..1|
+|isId-admin|Een enkelvoudige Id van een domeinobject, obv een toegekend attribuut. Het Id is administratief van aard en de Id is officieel uitgegeven, vaak gegenereerd, door een hiertoe officieel aangewezen bevoegde instantie. Vaak is deze instantie ook de bronhouder van de bijbehorende officiële (basis)registratie.||1..1|
 |cardinaliteit||[CharacterString]()|1..1|
 |identificatoronderdeel|Een identificerend kenmerk is een [kenmerk] waarmee de identiteit van een [domeinobject] mede kan worden vastgesteld|[Boolean]()|1..1|
 
 |Relatie|Definitie
 |-------|---------|
-|[Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) heeft waardetype waardetype [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0) []||
-|[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) heeft attribuuttype  [Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) [0..*]||
+|[Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) wordt ingevuld met waardetype [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0) []||
+|[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) kent attributie van eigenschap aan attribuuttype [Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) [0..*]||
 |[Identificator](#CEB3BBDF-F417-4069-B2F2-48229021C53A) heeft als onderdeel identificatordeel [Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) [0..*]||
-|[Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) is invulling van een eigenschap eigenschap [Eigenschap](#CADD3F4F-2B35-40ac-A85D-C54B59DEF9BB) []||
+|[Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) is een attributie van een kenmerk eigenschap [Eigenschap](#CADD3F4F-2B35-40ac-A85D-C54B59DEF9BB) []||
 
 ### Begrip {#A2948621-8D54-4c64-B640-3FFB3D223CE6}
 
@@ -81,6 +82,13 @@ Een complex waardetype is een typering van gelijksoortige [complexe waarden]
 |[Complex waardetype](#AF02163D-EA42-4739-A134-E9E43DA37E67) heeft waarde-element waarde-element [Waarde-element!](#3C6F95C0-D3C4-4429-82D5-F139299A38CF) []||
 |[Complex waardetype](#AF02163D-EA42-4739-A134-E9E43DA37E67) is specialisatie van [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0)||
 
+### GeattribueerdKenmerk {#CE5BEAF0-7789-48a1-BF3F-0A8F1C94A12D}
+
+|{: .def}||
+|-|-|
+|Naam|GeattribueerdKenmerk|
+|Indicatie abstract object|Nee|
+
 ### Generalisatie! {#554D263F-A396-4c24-9767-BD58B14B7B97}
 
 |{: .def}||
@@ -103,9 +111,14 @@ Een identificator is een geheel van één of meerdere [identificerende kenmerken
 |Indicatie abstract object|Nee|
 |Definitie|Een identificator is een geheel van één of meerdere [identificerende kenmerken] waarmee de identiteit van een [domeinobject] uniek kan worden vastgesteld|
 
+|Attribuut|Definitie|Formaat|Card|
+|---------|---------|-------|----|
+|type||[identificatortype]()|1..1|
+
 |Relatie|Definitie
 |-------|---------|
 |[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) heeft identificator identificator [Identificator](#CEB3BBDF-F417-4069-B2F2-48229021C53A) [1..*]||
+|[Identificator](#CEB3BBDF-F417-4069-B2F2-48229021C53A) heeft als onderdeel identificatordeel [Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) [0..*]||
 |[Identificator](#CEB3BBDF-F417-4069-B2F2-48229021C53A) heeft als onderdeel identificatordeel [Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) [0..*]||
 
 ### Objecttype {#A80A4669-D70D-42cd-9E1D-856E1DFF20F6}
@@ -120,17 +133,25 @@ Een objecttype is een typering van gelijksoortige [domeinobjecten]
 
 |Relatie|Definitie
 |-------|---------|
+|[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) kent attributie van rol aan referentierol [Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) [0..*]||
 |[Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) ingevuld door lijdendvoorwerp [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [1..1]||
 |[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) heeft als supertype supertype [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [0..*]||
-|[Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) wordt ingevuld door rolinvuller [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [1..1]||
+|[Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) wordt ingevuld met participatierol [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [1..1]||
 |[Generalisatie!](#554D263F-A396-4c24-9767-BD58B14B7B97) heeft specialisatie subtype [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [1..*]||
-|[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) heeft attribuuttype  [Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) [0..*]||
+|[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) kent attributie van eigenschap aan attribuuttype [Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) [0..*]||
 |[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) heeft identificator identificator [Identificator](#CEB3BBDF-F417-4069-B2F2-48229021C53A) [1..*]||
 |[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) speelt een rol in propositie predikaat [Verwoording](#6A085917-90D7-404a-BE30-B1A1DDFAD644) [0..*]||
 |[Generalisatie!](#554D263F-A396-4c24-9767-BD58B14B7B97) heeft generalisatie supertype [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [1..1]||
 |[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) participeert in relatie [Relatietype](#771B0E96-D69D-4f75-B1CC-F44F721ABCAA) [0..*]||
 |[Relatieobjecttype!](#51C29EE0-468B-4a10-A9D8-52FD427FCFC1) is specialisatie van [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6)||
 |[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) typering van domeinobject [Domeinobject](#D15E332C-6C18-4a4d-ADF3-955709DE7AEF) []||
+
+### Participatierol {#A94AC9B9-D9E2-4df9-9118-A55ED16309EC}
+
+|{: .def}||
+|-|-|
+|Naam|Participatierol|
+|Indicatie abstract object|Nee|
 
 ### Primitief datatype? {#4450F199-653A-41aa-973E-E1A2D7689F81}
 
@@ -151,6 +172,13 @@ Een objecttype is een typering van gelijksoortige [domeinobjecten]
 |{: .def}||
 |-|-|
 |Naam|Referentielijst?|
+|Indicatie abstract object|Nee|
+
+### Referentierol {#FF13D474-CE2B-40e6-9F71-C43F2BBCF99F}
+
+|{: .def}||
+|-|-|
+|Naam|Referentierol|
 |Indicatie abstract object|Nee|
 
 ### Relatieobjecttype! {#51C29EE0-468B-4a10-A9D8-52FD427FCFC1}
@@ -193,21 +221,26 @@ Een relatietype is een typering van gelijksoortige [relaties]
 
 |{: .def}||
 |-|-|
-|Naam|Rolinvulling|
 |Indicatie abstract object|Nee|
+|Naam|Rolinvulling|
 
 |Attribuut|Definitie|Formaat|Card|
 |---------|---------|-------|----|
+|isId-werkelijk|Een Id van een domeinobject, waarbij elk attribuut in de set intrinsiek is, en waarmee het domeinobject ge&#239;dentificeerd kan worden. Deze kan enkelvoudig of samengesteld zijn.||1..1|
 |naam|Indien naam niet is ingevuld dan geldt de naam van het objecttype.|[CharacterString]()|0..1|
 |identificatoronderdeel|Een identificerend kenmerk is een [kenmerk] waarmee de identiteit van een [domeinobject] mede kan worden vastgesteld|[Boolean]()|1..1|
+|isId-admin|Een enkelvoudige Id van een domeinobject, obv een toegekend attribuut. Het Id is administratief van aard en de Id is officieel uitgegeven, vaak gegenereerd, door een hiertoe officieel aangewezen bevoegde instantie. Vaak is deze instantie ook de bronhouder van de bijbehorende officiële (basis)registratie.||1..1|
 |cardinaliteit||[CharacterString]()|1..1|
+|isId-concept|Een Id van een domeinobjecttype is een specificatie van de set van eigenschaptypen (1..*) waarmee 1 domeinobject uniek bepaald kan worden||1..1|
 
 |Relatie|Definitie
 |-------|---------|
+|[Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) kent attributie van rol aan referentierol [Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) [0..*]||
 |[Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) ingevuld door lijdendvoorwerp [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [1..1]||
-|[Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) wordt ingevuld door rolinvuller [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [1..1]||
+|[Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) wordt ingevuld met participatierol [Objecttype](#A80A4669-D70D-42cd-9E1D-856E1DFF20F6) [1..1]||
 |[Relatietype](#771B0E96-D69D-4f75-B1CC-F44F721ABCAA) heeft relatie-uiteinde relatie-uiteinde [Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) [2..*]||
-|[Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) is invulling van een rol rol [Rol](#7DFD3E36-1F3D-4928-A285-2F477880F25D) [1..1]||
+|[Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) is invulling en attributie van een rol rol [Rol](#7DFD3E36-1F3D-4928-A285-2F477880F25D) [1..1]||
+|[Identificator](#CEB3BBDF-F417-4069-B2F2-48229021C53A) heeft als onderdeel identificatordeel [Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) [0..*]||
 |[Verwoording](#6A085917-90D7-404a-BE30-B1A1DDFAD644) heeft als doel doel [Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) []||
 |[Verwoording](#6A085917-90D7-404a-BE30-B1A1DDFAD644) heeft als bron bron [Rolinvulling](#C11E0907-9B14-4123-9A26-4F54539FBFEB) []||
 
@@ -257,7 +290,22 @@ Een waardetype is een typering van gelijksoortige [waarden]
 |Relatie|Definitie
 |-------|---------|
 |[Categoriserend waardetype!](#924567F9-2141-4876-9AF5-7E4796E0A845) is specialisatie van [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0)||
-|[Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) heeft waardetype waardetype [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0) []||
+|[Attribuuttype](#5322E10D-149C-47b9-8FB8-0DE0A2E14291) wordt ingevuld met waardetype [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0) []||
 |[Complex waardetype](#AF02163D-EA42-4739-A134-E9E43DA37E67) is specialisatie van [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0)||
 |[Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0) wordt ingevuld door datatype [Datatype](#09E003D3-8AD7-474d-8291-F8C4C9C8AE90) [0..1]||
 |[Waarde-element!](#3C6F95C0-D3C4-4429-82D5-F139299A38CF) heeft waardetype waardetype [Waardetype](#3E4E758C-8DD4-4e31-9643-2ED6926EA4B0) []||
+
+## Lijsten
+
+### identificatortype
+
+|{: .def}||
+|-|-|
+|Naam|identificatortype|
+|Indicatie abstract object|Nee|
+
+|Waarde|Definitie|
+|------|---------|
+|werkelijkheid|Een Id van een domeinobject, waarbij elk attribuut in de set intrinsiek is, en waarmee het domeinobject ge&#239;dentificeerd kan worden. Deze kan enkelvoudig of samengesteld zijn.|
+|adminstratief|Een enkelvoudige Id van een domeinobject, obv een toegekend attribuut. Het Id is administratief van aard en de Id is officieel uitgegeven, vaak gegenereerd, door een hiertoe officieel aangewezen bevoegde instantie. Vaak is deze instantie ook de bronhouder van de bijbehorende officiële (basis)registratie.|
+|conceptueel|Een Id van een domeinobjecttype is een specificatie van de set van eigenschaptypen (1..*) waarmee 1 domeinobject uniek bepaald kan worden|
